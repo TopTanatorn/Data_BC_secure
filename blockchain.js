@@ -53,11 +53,6 @@ class Blockchain{
     }
 
 }
-let topCoin = new Blockchain();
-topCoin.createGenesisBlock();
-topCoin.addBlock(new Block(1,"13/1/2022",{amout: 4}));
-console.log(topCoin.getLatestBlock());
-topCoin.addBlock(new Block(2,"14/1/2022",{amout: 10}));
-topCoin.addBlock(new Block(3,"14/1/2022",{amout: 10}));
-topCoin.addBlock(new Block(4,"14/1/2022",{amout: 10}));
-console.log('Is blockchain vaild?'+ topCoin.isChainValid()); 
+
+module.exports.Blockchain = Blockchain;
+module.exports.Block = Block;
